@@ -1,0 +1,348 @@
+/* ===== KHUNG CHÍNH ===== */
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 35px 20px;
+  background: #f5f7fb;
+}
+
+/* ===== CARD SẢN PHẨM ===== */
+.product {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  border: 1px solid #ececec;
+
+  transition: all 0.35s ease;
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.04),
+    0 2px 4px rgba(0,0,0,0.03);
+
+  height: 100%;
+}
+
+/* Viền sáng khi hover */
+.product::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(255,77,79,0.6),
+    rgba(255,170,0,0.4),
+    rgba(255,77,79,0.6)
+  );
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite: xor;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.product:hover::before {
+  opacity: 1;
+}
+
+/* Hover card */
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.12),
+    0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* ===== KHUNG ẢNH ===== */
+.productImage {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: linear-gradient(145deg, #f9f9f9, #ececec);
+  border-radius: 18px;
+  margin-bottom: 14px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+/* Hiệu ứng nền */
+.productImage::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 77, 79, 0.06);
+  border-radius: 50%;
+  top: -40px;
+  right: -40px;
+}
+
+/* Hình ảnh */
+.productImage img {
+  width: 88%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.55s ease;
+  z-index: 2;
+}
+
+/* Hover ảnh */
+.product:hover .productImage img {
+  transform: scale(1.12) rotate(-6deg);
+}
+
+/* ===== TÊN SẢN PHẨM ===== */
+.productName {
+  min-height: 48px;
+  margin-bottom: 10px;
+}
+
+.productName h5 {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #222;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.product:hover .productName h5 {
+  color: #ff4d4f;
+}
+
+/* ===== GIÁ ===== */
+.productPrice {
+  margin-bottom: 14px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 900;
+  color: #e53935;
+  letter-spacing: -0.5px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.oldPrice {
+  font-size: 12px;
+  color: #9aa0a6;
+  text-decoration: line-through;
+}
+
+.percent {
+  font-size: 11px;
+  font-weight: 800;
+  background: linear-gradient(45deg, #ff4d4f, #ff7a45);
+  color: white;
+  padding: 3px 7px;
+  border-radius: 999px;
+}
+
+/* ===== FLASH SALE ===== */
+.productRemain {
+  height: 22px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+}
+
+/* Thanh màu chạy */
+.productRemain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  width: 75%;
+
+  background: linear-gradient(
+    90deg,
+    #ff9f43,
+    #ff4d4f,
+    #ff9f43
+  );
+
+  background-size: 300% 100%;
+
+  animation: flashMove 3s linear infinite;
+
+  border-radius: 999px;
+}
+
+/* Animation */
+@keyframes flashMove {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 300%;
+  }
+}
+
+/* Icon lửa */
+.productRemain img {
+  position: relative;
+  z-index: 2;
+}
+
+/* Text flash sale */
+.remainText {
+  position: relative;
+  z-index: 2;
+
+  font-size: 10px;
+  font-weight: 900;
+  color: white;
+
+  text-transform: uppercase;
+  margin-left: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== NÚT MUA ===== */
+.buyButton {
+  margin-top: auto;
+
+  background: linear-gradient(
+    135deg,
+    #ff4d4f,
+    #ff7a45
+  );
+
+  color: white;
+  text-align: center;
+
+  padding: 12px 0;
+
+  border-radius: 14px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 8px 18px rgba(255,77,79,0.22);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hiệu ứng sáng chạy */
+.buyButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(255,255,255,0.25);
+  transform: skewX(-25deg);
+
+  transition: 0.6s;
+}
+
+.buyButton:hover::before {
+  left: 120%;
+}
+
+/* Hover button */
+.buyButton:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+
+  box-shadow:
+    0 12px 25px rgba(255,77,79,0.35);
+}
+
+/* ===== LINK ===== */
+.mainContent a {
+  text-decoration: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .mainContent {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .mainContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContent {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px 10px;
+    gap: 12px;
+  }
+
+  .product {
+    border-radius: 18px;
+    padding: 10px;
+  }
+
+  .productName h5 {
+    font-size: 12px;
+  }
+
+  .buyButton {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+}
