@@ -37,7 +37,7 @@ export default function Home() {
             <Link href="/chitietsanpham/2">
           <div className={styles.product}>
           <div className={styles.productImage}> 
-        <Image src="/hinh2.jpg" alt="Product 1" width={150} height={150} />
+        <Image src="/HINH2.jpg" alt="Product 1" width={150} height={150} />
                 </div>
                 <div className={styles.productName}>
                   <h5>Giày đá bóng cỏ nhân tạo Nike Air Zoom Mercurial Vapor 16 Academy TF Attack</h5>
