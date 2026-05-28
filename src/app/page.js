@@ -12,7 +12,7 @@ export default function Home() {
         <Link href="/chitietsanpham/1">
         <div className={styles.product}>
         <div className={styles.productImage}> 
-        <Image src="/hinh1.jpg" alt="Product 1" width={150} height={150} />
+        <Image src="/hh3.jpg" alt="Product 1" width={150} height={150} />
                 </div>
                 <div className={styles.productName}>
                   <h5>Giày đá bóng cỏ nhân tạo Nike Tiempo Ligera Pro TF</h5>
