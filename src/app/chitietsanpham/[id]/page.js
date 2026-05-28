@@ -11,7 +11,7 @@ async function getProduct(id) {
       name: "Giày đá bóng Nike Tiempo Legend 10",
       price: 2950000,
       oldPrice: 4000000,
-      image: "/hinh1.jpg",
+      image: "/hh3.jpg",
       description: "Nike Tiempo Legend 10 mang lại cảm giác bóng vượt trội với chất liệu da tổng hợp cao cấp. Thiết kế ôm sát, trọng lượng siêu nhẹ giúp bạn làm chủ mọi pha bóng.",
     },
     {
