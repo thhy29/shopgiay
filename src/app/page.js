@@ -25,7 +25,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className={styles.productRemain}>
-  <Image src="/hh2.webp" alt="fire" width={25} height={25} />
+  <Image src="/hh3.jpg" alt="fire" width={25} height={25} />
   <span className={styles.remainText}>Còn 30/30 suất</span>
   </div>
             <div className={styles.buyButton}>Mua ngay
@@ -37,7 +37,7 @@ export default function Home() {
             <Link href="/chitietsanpham/2">
           <div className={styles.product}>
           <div className={styles.productImage}> 
-        <Image src="/hh1.jfif" alt="Product 1" width={150} height={150} />
+        <Image src="/hh2.webp" alt="Product 1" width={150} height={150} />
                 </div>
                 <div className={styles.productName}>
                   <h5>Giày đá bóng cỏ nhân tạo Nike Air Zoom Mercurial Vapor 16 Academy TF Attack</h5>
@@ -74,7 +74,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className={styles.productRemain}>
-  <Image src="/hh2.webp" alt="fire" width={25} height={25} />
+  <Image src="/hh1.jfif" alt="fire" width={25} height={25} />
   <span className={styles.remainText}>Còn 30/30 suất</span>
   </div>
             <div className={styles.buyButton}>Mua ngay
@@ -95,7 +95,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className={styles.productRemain}>
-  <Image src="/hh2.webp" alt="fire" width={25} height={25} />
+  <Image src="/hh4.webp" alt="fire" width={25} height={25} />
   <span className={styles.remainText}>Còn 30/30 suất</span>
   </div>
             <div className={styles.buyButton}>Mua ngay
