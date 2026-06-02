@@ -25,7 +25,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className={styles.productRemain}>
-  <Image src="/hinh2.png" alt="fire" width={25} height={25} />
+  <Image src="/hhh2.webp" alt="fire" width={25} height={25} />
   <span className={styles.remainText}>Còn 30/30 suất</span>
   </div>
             <div className={styles.buyButton}>Mua ngay
