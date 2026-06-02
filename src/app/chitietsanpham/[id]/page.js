@@ -19,7 +19,7 @@ async function getProduct(id) {
       name: "Giày đá bóng cỏ nhân tạo Nike Air Zoom Mercurial Vapor 16",
       price: 2050000,
       oldPrice: 2669000,
-      image: "/HINH2.jpg",
+      image: "/hh2.webp",
       description: "Nike Ari Zoom Mercurial Vapor 16 mang lại cảm giác bóng vượt trội với chất liệu da tổng hợp cao cấp. Thiết kế ôm sát, trọng lượng siêu nhẹ giúp bạn làm chủ mọi pha bóng.",
     },
     {
