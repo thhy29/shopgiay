@@ -27,7 +27,7 @@ async function getProduct(id) {
       name: "Giày đá bóng cỏ nhân tạo Nike Tiempo Legend 10",
       price: 2050000,
       oldPrice: 2529000,
-      image: "/HINH3.jpg",
+      image: "/hh1.jfif",
       description: "Giày đá bóng cỏ nhân tạo Nike Tiempo Legend 10 mang lại cảm giác bóng vượt trội với chất liệu da tổng hợp cao cấp. Thiết kế ôm sát, trọng lượng siêu nhẹ giúp bạn làm chủ mọi pha bóng.",
     },
     {
@@ -35,7 +35,7 @@ async function getProduct(id) {
       name: "Giày đá bóng cỏ nhân tạo Nike Air Zoom Mercurial Vapor 16 Academy",
       price: 2150000,
       oldPrice: 2955000,
-      image: "/HINH4.jpg",
+      image: "/hh4.webp",
       description: "Giày đá bóng cỏ nhân tạo Nike Air Zoom Mercurial Vapor 16 Academy mang lại cảm giác bóng vượt trội với chất liệu da tổng hợp cao cấp. Thiết kế ôm sát, trọng lượng siêu nhẹ giúp bạn làm chủ mọi pha bóng.",
     },
     {
