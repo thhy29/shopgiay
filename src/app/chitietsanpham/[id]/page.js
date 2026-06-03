@@ -27,7 +27,7 @@ async function getProduct(id) {
       name: "Giày đá bóng cỏ nhân tạo Nike Tiempo Legend 10",
       price: 2050000,
       oldPrice: 2529000,
-      image: "/hh1.jfif",
+      image: "/n1.jpg",
       description: "Giày đá bóng cỏ nhân tạo Nike Tiempo Legend 10 mang lại cảm giác bóng vượt trội với chất liệu da tổng hợp cao cấp. Thiết kế ôm sát, trọng lượng siêu nhẹ giúp bạn làm chủ mọi pha bóng.",
     },
     {
@@ -43,7 +43,7 @@ async function getProduct(id) {
       name: "Giày đá bóng cỏ nhân tạo Joma Top Flex Pito 2462 Limited",
       price: 1680000,
       oldPrice: 2295000,
-      image: "/HINH5.jpg",
+      image: "/n5.jpg",
       description: "Giày đá bóng cỏ nhân tạo Joma Top Flex Pito 2462 Limited mang lại cảm giác bóng vượt trội với chất liệu da tổng hợp cao cấp. Thiết kế ôm sát, trọng lượng siêu nhẹ giúp bạn làm chủ mọi pha bóng.",
     },
     {
