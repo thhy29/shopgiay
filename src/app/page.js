@@ -61,7 +61,7 @@ export default function Home() {
 <Link href="/chitietsanpham/3">
           <div className={styles.product}>
           <div className={styles.productImage}> 
-        <Image src="/hh1.jfif" alt="Product 1" width={150} height={150} />
+        <Image src="/n1.jpg" alt="Product 1" width={150} height={150} />
                 </div>
                 <div className={styles.productName}>
                   <h5>Giày đá bóng cỏ nhân tạo Nike Tiempo Legend 10 Academy TF</h5>
@@ -74,7 +74,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className={styles.productRemain}>
-  <Image src="/hh1.jfif" alt="fire" width={25} height={25} />
+  <Image src="/n1.jpg" alt="fire" width={25} height={25} />
   <span className={styles.remainText}>Còn 30/30 suất</span>
   </div>
             <div className={styles.buyButton}>Mua ngay
@@ -104,7 +104,7 @@ export default function Home() {
           {/* hàng thu 2 */}
           <Link href="/chitietsanpham/5">
           <div className={styles.product}>  <div className={styles.productImage}> 
-        <Image src="/HINH5.jpg" alt="Product 1" width={150} height={150} />
+        <Image src="/n5.jpg" alt="Product 1" width={150} height={150} />
                 </div>
                 <div className={styles.productName}>
                   <h5>Giày đá bóng cỏ nhân tạo Joma Top Flex Pito 2462 Limited Edition TF</h5>
@@ -117,7 +117,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className={styles.productRemain}>
-  <Image src="/hh2.webp" alt="fire" width={25} height={25} />
+  <Image src="/n5.jpg" alt="fire" width={25} height={25} />
   <span className={styles.remainText}>Còn 30/30 suất</span>
   </div>
             <div className={styles.buyButton}>Mua ngay
